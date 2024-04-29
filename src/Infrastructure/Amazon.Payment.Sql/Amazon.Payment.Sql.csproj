@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Amazon.Payment.Domain\Amazon.Payment.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
