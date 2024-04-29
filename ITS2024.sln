@@ -13,13 +13,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A8A272
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{FFAEB41A-6D6E-44D4-8A96-E9383C6603B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Payment.Domain", "src\Domain\Amazon.Payment.Domain\Amazon.Payment.Domain.csproj", "{E794879B-8438-4718-8B4F-B10EE6A4B949}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Payment.Domain", "src\Domain\Amazon.Payment.Domain\Amazon.Payment.Domain.csproj", "{E794879B-8438-4718-8B4F-B10EE6A4B949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Payment.Sql", "src\Infrastructure\Amazon.Payment.Sql\Amazon.Payment.Sql.csproj", "{D61CCEEC-0C0A-4159-B76C-59AD3D61E7D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Payment.Sql", "src\Infrastructure\Amazon.Payment.Sql\Amazon.Payment.Sql.csproj", "{D61CCEEC-0C0A-4159-B76C-59AD3D61E7D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Payment.Business", "src\Application\Amazon.Payment.Business\Amazon.Payment.Business.csproj", "{A5BFF48D-FAEA-4873-AC70-83A8D1BB3EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Payment.Business", "src\Application\Amazon.Payment.Business\Amazon.Payment.Business.csproj", "{A5BFF48D-FAEA-4873-AC70-83A8D1BB3EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Payment.Api", "src\Presentation\Amazon.Payment.Api\Amazon.Payment.Api.csproj", "{67C7B0DA-B7E4-4AA8-926B-A10CD38D05B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Payment.Api", "src\Presentation\Amazon.Payment.Api\Amazon.Payment.Api.csproj", "{67C7B0DA-B7E4-4AA8-926B-A10CD38D05B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C33AC422-F2A9-4A13-87E5-1EA59D970EEE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
