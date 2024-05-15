@@ -1,4 +1,5 @@
 using Amazon.Payment.Domain;
+using Amazon.Payment.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Amazon.Payment.Api.Controllers
@@ -7,28 +8,31 @@ namespace Amazon.Payment.Api.Controllers
     [Route("v1/[controller]/[action]")]
     public class CartController : ControllerBase
     {
+        private readonly ICartStorageService _cartStorageService;
         private readonly ILogger<CartController> _logger;
 
-        public CartController(ILogger<CartController> logger)
+        public CartController(
+            ICartStorageService cartStorageService,
+            ILogger<CartController> logger)
         {
+            _cartStorageService = cartStorageService;
             _logger = logger;
         }
 
         [HttpGet]
         public IEnumerable<Item> List(Guid cartId)
         {
-            return Array.Empty<Item>();
+            return _cartStorageService.List(cartId);
         }
         [HttpPost]
-        public bool AddItem(/*add item*/)
+        public bool AddItem(Item item, [FromQuery] Guid cartId)
         {
-            return true;
+            return _cartStorageService.AddItem(item, cartId);
         }
         [HttpDelete]
-        public bool Delete(int itemId, Guid cartId)
+        public bool Delete(Guid itemId, Guid cartId)
         {
-            // Delete item
-            return true;
+            return _cartStorageService.Delete(itemId, cartId);
         }
     }
 }
