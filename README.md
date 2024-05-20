@@ -83,6 +83,11 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
    - Le migrazioni sono usate per mantenere lo schema del database sincronizzato con il modello di dati.
    - I seguenti comandi generano e applicano le migrazioni all'istanza LocalDB.
 
+   - Setup:
+   ```bash
+    dotnet tool install --global dotnet-ef --version 8.*
+   ```
+   - Comandi per migrazione:
    ```bash
    dotnet ef migrations add InitialCreate
    dotnet ef database update
