@@ -4,9 +4,10 @@ using Amazon.Payment.Sql;
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
-//builder.Services.AddTransient<ICartStorageService, CartStorageService2>();
-builder.Services.AddSingleton<ICartStorageService, CartStorageService>();
-
+builder.Services.AddTransient<ICartStorageService, CartStorageServiceWithSql>();
+//builder.Services.AddSingleton<ICartStorageService, CartStorageService>();
+builder.Services
+    .AddSqlServer<PaymentDbContext>(builder.Configuration.GetConnectionString("Default"));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

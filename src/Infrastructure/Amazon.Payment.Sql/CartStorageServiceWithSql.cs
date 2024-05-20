@@ -3,11 +3,17 @@ using Amazon.Payment.Domain.Services;
 
 namespace Amazon.Payment.Sql
 {
-    public sealed class CartStorageService2 : ICartStorageService
+    public sealed class CartStorageServiceWithSql : ICartStorageService
     {
+        private readonly PaymentDbContext _context;
+        public CartStorageServiceWithSql(PaymentDbContext context)
+        {
+            _context = context;
+        }
         public bool AddItem(Item item, Guid cartId)
         {
-            throw new NotImplementedException();
+            _context.Items.Add(item);
+            return _context.SaveChanges() == 1;
         }
 
         public bool Delete(Guid itemId, Guid cartId)
