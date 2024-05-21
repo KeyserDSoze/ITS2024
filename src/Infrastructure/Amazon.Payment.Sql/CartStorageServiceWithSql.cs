@@ -12,6 +12,7 @@ namespace Amazon.Payment.Sql
         }
         public bool AddItem(Item item, Guid cartId)
         {
+            item.CartId = cartId;
             _context.Items.Add(item);
             return _context.SaveChanges() == 1;
         }
@@ -23,7 +24,9 @@ namespace Amazon.Payment.Sql
 
         public IEnumerable<Item> List(Guid cartId)
         {
-            throw new NotImplementedException();
+           var items = _context.Items
+                .Where(x => x.CartId == cartId && x.IsAvailable);
+            return items.ToList();
         }
     }
 }
