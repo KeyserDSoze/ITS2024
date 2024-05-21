@@ -16,12 +16,10 @@ namespace Amazon.Payment.Sql
             _context.Items.Add(item);
             return _context.SaveChanges() == 1;
         }
-
         public bool Delete(Guid itemId, Guid cartId)
         {
             throw new NotImplementedException();
         }
-
         public IEnumerable<Item> List(Guid cartId)
         {
            var items = _context.Items

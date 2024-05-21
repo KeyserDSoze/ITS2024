@@ -18,7 +18,7 @@ namespace Amazon.Payment.Sql
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //optionsBuilder.UseInMemoryDatabase("MyDatabase");
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFCoreExample;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=sql_server;Initial Catalog=TemporaryBase;User Id=SA;Password=C4nD1ti55#;Encrypt=false;TrustServerCertificate=true;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

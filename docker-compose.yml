@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:latest
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: 'C4nD1ti55#'
+    networks:
+      - my_network
+    ports:
+      - "1433:1433"
+  
+  amazon.payment.api:
+    image: ${DOCKER_REGISTRY-}amazonpaymentapi
+    build:
+      context: .
+      dockerfile: src/Presentation/Amazon.Payment.Api/Dockerfile
+    environment:
+      ConnectionStrings__Default: "Server=sql_server;Initial Catalog=TemporaryBase;User Id=SA;Password=C4nD1ti55#;Encrypt=false;TrustServerCertificate=true;"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
