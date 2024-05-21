@@ -6,6 +6,12 @@
 Videos
 [Clean architecture](https://www.youtube.com/watch?v=TQdLgzVk2T8&ab_channel=MilanJovanovi%C4%87)
 
+[Container su VS2022](https://learn.microsoft.com/en-us/visualstudio/containers/overview?view=vs-2022)
+
+[Docker commands](https://docs.docker.com/reference/dockerfile/)
+
+[Docker compose](https://docs.docker.com/compose/compose-application-model/)
+
 ---
 
 # Tutorial su Entity Framework Core
