@@ -18,12 +18,16 @@ namespace Amazon.Payment.Sql
         }
         public bool Delete(Guid itemId, Guid cartId)
         {
-            throw new NotImplementedException();
+            var item = _context.Items.FirstOrDefault(x => x.Id == itemId && x.CartId == cartId);
+            _context.Items.Remove(item);
+            return _context.SaveChanges() > 0;
+
+
         }
         public IEnumerable<Item> List(Guid cartId)
         {
-           var items = _context.Items
-                .Where(x => x.CartId == cartId && x.IsAvailable);
+            var items = _context.Items
+                 .Where(x => x.CartId == cartId && x.IsAvailable);
             return items.ToList();
         }
     }

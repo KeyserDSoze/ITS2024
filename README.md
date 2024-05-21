@@ -6,8 +6,6 @@
 Videos
 [Clean architecture](https://www.youtube.com/watch?v=TQdLgzVk2T8&ab_channel=MilanJovanovi%C4%87)
 
-Certo, ecco il README tradotto in italiano per spiegare gli approcci Code First e Database First con Entity Framework Core (EF Core) in .NET usando SQL Server:
-
 ---
 
 # Tutorial su Entity Framework Core
