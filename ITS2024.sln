@@ -32,6 +32,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon.Payment.Sql2", "src\
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5FEAF531-4CEF-4B1D-AA06-67E177E4921D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9F41FCB3-94F6-4042-B1EB-844DA52171B8}"
+	ProjectSection(SolutionItems) = preProject
+		infra.bicep = infra.bicep
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
