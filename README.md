@@ -17,6 +17,8 @@ DI
 [DI overview](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 [DI usage](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-usage)
 
+[Bicep](https://learn.microsoft.com/en-us/training/modules/build-first-bicep-template/)
+
 ---
 
 # Tutorial su Entity Framework Core
