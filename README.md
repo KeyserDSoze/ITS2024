@@ -120,3 +120,10 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
    ```
 
 Questo creerà un `DbContext` e classi modello basate sullo schema di `YourDatabaseName`, permettendoti di lavorare con il database usando oggetti .NET.
+
+------
+Codice per deploy su azure
+
+```bash
+az deployment group create --resource-group <nome-del-tuo-resource-group> --template-file main.bicep
+```
