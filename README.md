@@ -19,6 +19,9 @@ DI
 
 [Bicep](https://learn.microsoft.com/en-us/training/modules/build-first-bicep-template/)
 
+
+[My visual studio](https://my.visualstudio.com)
+
 ---
 
 # Tutorial su Entity Framework Core
