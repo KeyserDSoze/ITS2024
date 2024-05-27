@@ -22,6 +22,10 @@ DI
 
 [My visual studio](https://my.visualstudio.com)
 
+[Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator)
+
+[Design an infrastructure](https://draw.io)
+
 ---
 
 # Tutorial su Entity Framework Core
