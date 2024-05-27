@@ -35,6 +35,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9F41FCB3-94F6-4042-B1EB-844DA52171B8}"
 	ProjectSection(SolutionItems) = preProject
 		infra.bicep = infra.bicep
+		ITS2024_A.drawio.png = ITS2024_A.drawio.png
 	EndProjectSection
 EndProject
 Global
