@@ -12,7 +12,7 @@ Videos
 
 [Docker compose](https://docs.docker.com/compose/compose-application-model/)
 
-DI
+Dependency Injection (DI)
 
 [DI overview](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 [DI usage](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-usage)
