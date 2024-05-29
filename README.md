@@ -131,3 +131,34 @@ Codice per deploy su azure
 ```bash
 az deployment group create --resource-group <nome-del-tuo-resource-group> --template-file main.bicep
 ```
+
+
+------------
+
+# Tutorial su Bicep con setup e deploy
+
+```bash
+az bicep install
+
+az login
+
+az account set --subscription "6a37c895-4239-4b1e-bc34-a48c4994cc8a"
+
+az group create --name its2024-rg --location eastus 
+
+az deployment group create --resource-group its2024-rg --template-file main.bicep
+```
+
+## File Main.bicep
+
+```bicep
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
+  name: 'mystorageaccountforeigner32'
+  location: 'eastus'
+  sku: {
+    name: 'Standard_LRS'
+  }
+  kind: 'StorageV2'
+  properties: {}
+}
+```
