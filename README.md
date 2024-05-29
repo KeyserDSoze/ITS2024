@@ -162,3 +162,8 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   properties: {}
 }
 ```
+
+
+## Pipeline di CI/CD
+
+[Pipeline di CI/CD](https://github.com/Azure/webapps-deploy)
