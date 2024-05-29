@@ -142,7 +142,7 @@ az bicep install
 
 az login
 
-az account set --subscription "6a37c895-4239-4b1e-bc34-a48c4994cc8a"
+az account set --subscription "6axxxxxx-4239-4b1e-bc34-a48c4994cc8a"
 
 az group create --name its2024-rg --location eastus 
 
