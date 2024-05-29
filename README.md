@@ -153,7 +153,7 @@ az deployment group create --resource-group its2024-rg --template-file main.bice
 
 ```bicep
 resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
-  name: 'mystorageaccountforeigner32'
+  name: 'myincrediblestorage'
   location: 'eastus'
   sku: {
     name: 'Standard_LRS'
