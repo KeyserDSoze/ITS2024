@@ -16,6 +16,7 @@ Dependency Injection (DI)
 
 [DI overview](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 [DI usage](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-usage)
+[Middleware](https://learn.microsoft.com/it-it/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0)
 
 [Bicep](https://learn.microsoft.com/en-us/training/modules/build-first-bicep-template/)
 

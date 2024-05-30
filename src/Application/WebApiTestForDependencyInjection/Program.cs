@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using WebApi.Middlewawres;
 using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,9 +15,9 @@ builder.Services.AddTransient<IManager, Manager>();
 builder.Services.AddSingleton<SingletonService>();
 builder.Services.AddScoped<ScopedService>();
 builder.Services.AddTransient<TransientService>();
+builder.Services.AddSingleton<ApiKeyMiddleware>();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -25,7 +26,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseMiddleware<ApiKeyMiddleware>();
 app.UseAuthorization();
 
 app.MapControllers();
