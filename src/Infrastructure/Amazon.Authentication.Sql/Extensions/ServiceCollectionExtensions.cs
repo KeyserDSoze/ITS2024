@@ -6,11 +6,15 @@ namespace Amazon.Authentication.Sql.Services
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddAuthenticationStorage(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddAuthenticationStorage(
+            this IServiceCollection services,
+            IConfiguration configuration)
         {
             services
-                .AddSqlServer<AuthenticationDbContext>(configuration.GetConnectionString("Default"));
-            services.AddScoped<IApiKeyHandler, ApiKeyHandler>();
+                .AddSqlServer<AuthenticationDbContext>(
+                    configuration.GetConnectionString("Default"));
+            services
+                .AddScoped<IApiKeyHandler, ApiKeyHandler>();
             return services;
         }
     }
