@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Application\Amazon.Payment.Business\Amazon.Payment.Business.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Amazon.Authentication.Sql\Amazon.Authentication.Sql.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Amazon.Payment.Sql\Amazon.Payment.Sql.csproj" />
   </ItemGroup>
 

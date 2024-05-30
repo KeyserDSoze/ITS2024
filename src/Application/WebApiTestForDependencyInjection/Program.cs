@@ -1,5 +1,5 @@
 ﻿using System.Text;
-using WebApi.Middlewawres;
+using WebApi.Middlewares;
 using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);

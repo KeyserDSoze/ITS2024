@@ -40,6 +40,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 		ITS2024_A.drawio.png = ITS2024_A.drawio.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Authentication.Sql", "src\Infrastructure\Amazon.Authentication.Sql\Amazon.Authentication.Sql.csproj", "{873A36DA-0FED-470F-8829-AF9E438B1E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon.Authentication.Domain", "src\Domain\Amazon.Authentication.Domain\Amazon.Authentication.Domain.csproj", "{B9EB9075-DA62-4E8A-A347-71E462041FBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +78,14 @@ Global
 		{5FEAF531-4CEF-4B1D-AA06-67E177E4921D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FEAF531-4CEF-4B1D-AA06-67E177E4921D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FEAF531-4CEF-4B1D-AA06-67E177E4921D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873A36DA-0FED-470F-8829-AF9E438B1E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873A36DA-0FED-470F-8829-AF9E438B1E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873A36DA-0FED-470F-8829-AF9E438B1E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873A36DA-0FED-470F-8829-AF9E438B1E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EB9075-DA62-4E8A-A347-71E462041FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EB9075-DA62-4E8A-A347-71E462041FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EB9075-DA62-4E8A-A347-71E462041FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EB9075-DA62-4E8A-A347-71E462041FBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +101,8 @@ Global
 		{67C7B0DA-B7E4-4AA8-926B-A10CD38D05B0} = {EA9C6485-8E04-43BB-A775-72244E75063E}
 		{79384938-855E-430E-BEAF-666E45387BFE} = {FFAEB41A-6D6E-44D4-8A96-E9383C6603B1}
 		{14DB4DAF-11DA-4FF9-9531-3AB59C3EDFFB} = {C366BE2E-278E-4EEC-929F-AE6980FACE32}
+		{873A36DA-0FED-470F-8829-AF9E438B1E58} = {C366BE2E-278E-4EEC-929F-AE6980FACE32}
+		{B9EB9075-DA62-4E8A-A347-71E462041FBF} = {A8A27223-F66F-462D-84AC-7E9204E55BD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1AEAA148-2A55-49DA-A6B1-10573E36F78C}

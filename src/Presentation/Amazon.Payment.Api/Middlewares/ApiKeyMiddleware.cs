@@ -1,18 +1,19 @@
-﻿
-namespace WebApi.Middlewawres
+﻿using Amazon.Authentication.Domain;
+
+namespace Amazon.Payment.Api.Middlewares
 {
     public class ApiKeyMiddleware : IMiddleware
     {
-        private readonly string _apiKey;
-        public ApiKeyMiddleware(IConfiguration configuration) 
+        private readonly IApiKeyHandler _apiKey;
+        public ApiKeyMiddleware(IApiKeyHandler apiKey)
         {
-            _apiKey = configuration["ApiKey"]!;
+            _apiKey = apiKey;
         }
         public Task InvokeAsync(HttpContext context,
             RequestDelegate next)
         {
             context.Request.Query.TryGetValue("apiKey", out var apiKey);
-            if (apiKey == _apiKey)
+            if (apiKey == _apiKey.GetValue())
             {
                 return next.Invoke(context);
             }
